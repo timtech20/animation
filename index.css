@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/img/Header_PrivateRunways-removebg-preview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items:end;
+
+}
+
+.ball{
+    display: flex;
+    position: relative;
+    left: 1700px;
+    top: 70em;
+    animation: time 20s infinite;
+
+    animation-delay: 5s;
+    animation-timing-function: ease-out; 
+    
+}
+
+audio{
+    position: relative;
+    right: 30em;
+    display: none;
+}
+
+@keyframes time {
+    0%{
+        transform: translate(-00px);
+    }
+    
+    30%{
+        transform: translateX();
+    }
+    
+    50%{
+        transform: translate(-3500px,-2800px);
+    }
+
+    100%{
+        transform: translate(3000px);
+    }
+
+    }
+
